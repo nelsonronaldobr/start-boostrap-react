@@ -8,7 +8,7 @@
     color: #FFFFFF;
     font-weight: 800;
     font-family: var(--font-primary);
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .title {
@@ -23,4 +23,26 @@
     /* Convierte el texto en mayúsculas */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Agrega una sombra al texto */
+}
+
+.header__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header__nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 900;
+    /* Ajusta el grosor del texto */
+    letter-spacing: -1px;
+    /* Reduce el espaciado entre letras */
+    line-height: 1;
+    /* Ajusta la altura de línea */
 }
