@@ -1,8 +1,10 @@
 import style from '../css-modules/Header.module.css';
+import { Logo } from './Logo';
 
 export const Navbar = () => {
     return (
-        <nav className='header__nav'>
+        <nav className={`${style.header__nav} container`}>
+            <Logo />
             <ul className={style['header__nav-list']}>
                 <li className={style['header__nav-item']}>
                     <a href='#portafolio' className={style['header__nav-link']}>

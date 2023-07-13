@@ -1,0 +1,80 @@
+.container {
+    margin: 0 auto;
+}
+
+.star-icon {
+    position: relative;
+}
+
+.star-icon::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 4px;
+    left: 45px;
+    top: 6px;
+    bottom: 0;
+}
+
+.star-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 4px;
+    right: 45px;
+    top: 6px;
+    bottom: 0;
+}
+
+
+/* Estilos para dispositivos Small (≥576px) */
+@media (min-width: 576px) {
+
+    /* Tus estilos para dispositivos Small aquí */
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+/* Estilos para dispositivos Medium (≥768px) */
+@media (min-width: 768px) {
+
+    /* Tus estilos para dispositivos Medium aquí */
+    .container {
+        max-width: 720px;
+    }
+
+}
+
+/* Estilos para dispositivos Large (≥992px) */
+@media (min-width: 992px) {
+
+    /* Tus estilos para dispositivos Large aquí */
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+/* Estilos para dispositivos Extra large (≥1200px) */
+@media (min-width: 1200px) {
+
+    /* Tus estilos para dispositivos Extra large aquí */
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+/* Estilos para dispositivos Extra extra large (≥1400px) */
+@media (min-width: 1400px) {
+
+    /* Tus estilos para dispositivos Extra extra large aquí */
+    .container {
+        max-width: 1320px;
+    }
+
+}
