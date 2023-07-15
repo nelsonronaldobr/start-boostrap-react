@@ -1,8 +1,10 @@
+import holu from '../../css-modules/Footers.module.css'
+
 export const Around = () => {
     return (
-        <div className='footer-around footer-divs'>
-            <h1 className='footer-title'>AROUND THE WEB </h1>
-            <div className='footer-container__webs'>
+        <div className={holu['footer-divs']}>
+            <h1 className={holu['footer-title']}>AROUND THE WEB </h1>
+            <div className={holu['footer-container__webs']}>
                 <a href='#' target='_blank'>
                     <i className='fab fa-facebook white-icon'></i>
                 </a>

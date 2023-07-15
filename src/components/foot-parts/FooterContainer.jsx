@@ -1,10 +1,11 @@
 import { Location, About, Around } from '.';
+import style from "../../css-modules/Footers.module.css";
 export const FooterContainer = () => {
     return (
-        <div className='footer-container__divs'>
+        <div className={style['footer-container']}>
             <Location />
-            <About />
             <Around />
+            <About />
         </div>
     );
 };
