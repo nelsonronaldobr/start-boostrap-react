@@ -1,5 +1,6 @@
 //import style from './styles-sheet/style.module.css';
 
+import { Button } from './components/Button';
 import { Navbar } from './components/Navbar';
 
 export const App = () => {
@@ -27,11 +28,11 @@ export const App = () => {
 
   return (
     <div>
-      <Navbar
+      {/* <Navbar
         links={links}
         manzana='1'
         manzana2='2'>
-        {/* =========esto esta dentro========== */}
+        
         <p>hola</p>
         <p>hola</p>
       </Navbar>
@@ -40,7 +41,7 @@ export const App = () => {
         manzana={2}
         manzana2={['1', '2', '3']}
         status={false}>
-        {/* =========esto esta dentro========== */}
+        
         <p>hola</p>
         <p>hola</p>
         <p>hola</p>
@@ -49,7 +50,10 @@ export const App = () => {
         <p>hola</p>
         <p>hola</p>
         <p>hola</p>
-      </Navbar>
+      </Navbar> */}
+      <Button cualquierCosa={'red'}>Aceptar</Button>
+      <Button>Cancelar</Button>
+      <Button>Exportar</Button>
     </div>
   );
 };

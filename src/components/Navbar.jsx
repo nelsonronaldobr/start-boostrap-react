@@ -1,4 +1,6 @@
-export const Navbar = ({ children, links }) => {
+import PropTypes from 'prop-types';
+
+export const Navbar = ({ links }) => {
   return (
     <nav>
       <ul>
@@ -12,3 +14,5 @@ export const Navbar = ({ children, links }) => {
     </nav>
   );
 };
+
+Navbar.prototype
