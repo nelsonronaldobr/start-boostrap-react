@@ -1,8 +1,8 @@
 
-export const Button = ({children, cualquierCosa}) => {
-    
+export const Button = ({children, className}) => {
+    console.log(className)
     console.log(children);
     return (
-        <button>{children}</button>
+        <button className={className}>{children}</button>
     )
 }

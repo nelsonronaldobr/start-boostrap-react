@@ -1,3 +1,16 @@
-.red {
-    background: red;
+
+.amarillo{
+background-color: #f1ef7f ;
+}
+.rosado{
+background-color: #e097f7;
+}
+.verde{
+background-color: #bef689;
+}
+.flex{
+    background-color: #e097f7;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
 }
