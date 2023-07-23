@@ -6,7 +6,7 @@ export const CardContainer = ({products, className}) => {
     return (
         <div className={className}> 
             {products.map((product,index) => (
-             <ProductCard key={product.id} producto={product}>{product.description}</ProductCard>
+             <ProductCard key={product.id} product={product}>{product.description}</ProductCard>
             )
 
            ) }
@@ -14,8 +14,7 @@ export const CardContainer = ({products, className}) => {
     )
 }
 
-const ProductCard= ( {children,producto})=>{
-    const {name,price} = producto;
+const ProductCard= ( {children, product : { name, price }})=>{
 return(
     <div>
     <h1>{name}</h1>
