@@ -1,93 +1,37 @@
-//import style from './styles-sheet/style.module.css';
+import { useState } from 'react';
+import { ContainerUser } from './components/ContainerUser';
+import { useEffect } from 'react';
 
-// import { Button } from './components/Button';
-// import { Navbar } from './components/Navbar';
-import { CardContainer } from './components';
 export const App = () => {
-const productos = [
-{
-  id : "1",
-  name: "Bicicleta",
-  description : "Montañera MV8",
-  price: 500
-},
-{
-  id : "2",
-  name: "Colchon",
-  description : "Colchon de 1/2",
-  price: 200
-},
-{
-  id : "3",
-  name: "Mesa",
-  description : "Mesa de cedro",
-  price: 300
-},
-{
-  id : "4",
-  name: "Tv",
-  description : "LG4",
-  price: 1000
-}
-]
-  return(
-    <CardContainer className={"flex"} products= {productos} />
-  )
-}
+    /* creamos un state para guardar los USUARIOS */
+    const [users, setUsers] = useState([]);
 
+    const limit = 6;
+    const offset = 0;
 
+    /* aqui creamos el useEffect para que se ejecute
+     tan solo una vez sea creado o renderizado el componente */
+    useEffect(() => {
+        /* creamos la funcion async que nos va traer a los usuarios de la API */
+        /* usamos fetch para hacer la peticion */
+        const getUser = async () => {
+            /* usamos un await porque vamos a esperar una promesa (el FETCH retorna una promesa) */
+            /* el AWAIT hace que esta linea del codigo se detenga y solo siga si se
+            resuelve la promesa */
+            const result = await fetch(
+                `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`
+            );
+            /* usamos un await porque el result sigue siendo una promesa y lo transformamos a json
+            para poder manipularlo, como aun es una promesa tambien esperamos esta linea mientras
+            se transforma a JSON*/
+            const data = await result.json();
+            /* aqui SETEAMOS el resultado de la api en el STATE users */
+            setUsers(data.results);
+        };
+        /* mandamos a llamar la funcion una vez cargue el useEffect */
+        /* NOTA: este useEffect se manda a llamar una sola vez (siempre y cuando no tenga dependencias) */
+        getUser();
+    }, []);
 
-// export const App = () => {
-//   const links = [
-//     {
-//       title: 'home',
-//       href: '/home',
-//     },
-//     {
-//       title: 'About',
-//       href: '/about',
-//     },
-//   ];
-
-//   const links2 = [
-//     {
-//       title: 'contact',
-//       href: '/contact',
-//     },
-//     {
-//       title: 'products',
-//       href: '/products',
-//     },
-//   ];
-
-//   return (
-//     <div>
-//       {/* <Navbar
-//         links={links}
-//         manzana='1'
-//         manzana2='2'>
-        
-//         <p>hola</p>
-//         <p>hola</p>
-//       </Navbar>
-//       <Navbar
-//         links={links2}
-//         manzana={2}
-//         manzana2={['1', '2', '3']}
-//         status={false}>
-        
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//         <p>hola</p>
-//       </Navbar> */}
-//       <Button className={'amarillo'}>Aceptar</Button>
-//       <Button className={'rosado'}>Cancelar</Button>
-//       <Button className={'verde'}>Exportar</Button>
-//     </div>
-//   );
-// };
+    return <ContainerUser users={users} />;
+};

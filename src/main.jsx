@@ -4,7 +4,11 @@ import { App } from './App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+        <div>
+            <p>hijo</p>
+            <p>otro hijo</p>
+        </div>
+    </React.StrictMode>
 );
