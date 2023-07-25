@@ -1,6 +1,3 @@
-
-
-
 .container {
     margin: 0 auto;
 }
@@ -49,7 +46,6 @@
     .container {
         max-width: 720px;
     }
-
 }
 
 /* Estilos para dispositivos Large (≥992px) */

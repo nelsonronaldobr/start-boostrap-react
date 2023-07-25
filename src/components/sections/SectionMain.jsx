@@ -1,9 +1,10 @@
 import profile from '../../assets/images/profile.png';
 import style from '../../css-modules/SectionMain.module.css';
+import { Container } from '..';
 export const SectionMain = () => {
     return (
         <div className={style['section-main__container']}>
-            <div className='container'>
+            <Container>
                 <section className={`${style['section-main']}`}>
                     <picture className={style['section-main__picture']}>
                         <img
@@ -22,7 +23,7 @@ export const SectionMain = () => {
                         Designer
                     </p>
                 </section>
-            </div>
+            </Container>
         </div>
     );
 };

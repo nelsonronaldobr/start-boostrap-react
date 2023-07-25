@@ -1,90 +1,100 @@
 @import '../css/globals.css';
+
 /*Estilos para todo el footer*/
 .footer {
-        background-color: var(--color-primary);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-      }
-      .footer-title{
-        font-family: var(--font-primary);
-        font-size: 25px;
-        font-weight: 900;
-        letter-spacing: -1px;
-        line-height: 1;
-    }
-      .footer p {
-        font-family: var(--font-secondary);
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 1.3;
-    }
-      .footer-container {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0 0 30px 0;
-      }
-      
-      .footer-divs {
-        width: 21em;
-        text-align: center;
-      }
-      .footer-divs span{
-       
-                color: var(--color-secondary);
-            
-      }
-      .footer-container__webs{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .footer-container__webs a {
-        display: flex;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin: 5px;
-        background-color: transparent;
-        border: 2px solid white;
-        text-align: center;
-        line-height: 30px;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-      }
-      
-      .footer-container__webs a i {
-        color: white;
-      }
-      /* Estilos para pantallas grandes de escritorio */
-      @media screen and (min-width: 768px) {
-        .footer-container {
-          margin: 0 20px; 
-        }
-        
-        .footer-divs {
-          width: calc((100% - 40px) / 3); /* Tamaño de 1/3 del ancho disponible con margen de 20px */
-          margin: 0 20px; 
-        }
-      }
-      
-      /* Estilos para teléfonos y pantallas más pequeñas */
-      @media screen and (max-width: 767px) {
-        .footer-container {
-          flex-direction: column; 
-          align-items: center; 
-          padding: 0 10px;
-        }
-        
-        .footer-divs {
-          width: 100%; 
-          margin: 0 0 20px 0; /* Margen inferior de 20px en pantallas pequeñas */
-          text-align: start;
-        }
-        .footer p{
-                font-size: 18px;
-        }
-      }
-      
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.footer-title {
+  font-family: var(--font-primary);
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.footer p {
+  font-family: var(--font-secondary);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 30px 0;
+}
+
+.footer-divs {
+  width: 21em;
+  text-align: center;
+}
+
+.footer-divs span {
+
+  color: var(--color-secondary);
+
+}
+
+.footer-container__webs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container__webs a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: transparent;
+  border: 2px solid white;
+  text-align: center;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer-container__webs a i {
+  color: white;
+}
+
+/* Estilos para pantallas grandes de escritorio */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    margin: 0 20px;
+  }
+
+  .footer-divs {
+    width: calc((100% - 40px) / 3);
+    /* Tamaño de 1/3 del ancho disponible con margen de 20px */
+    margin: 0 20px;
+  }
+}
+
+/* Estilos para teléfonos y pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .footer-divs {
+    width: 100%;
+    margin: 0 0 20px 0;
+    /* Margen inferior de 20px en pantallas pequeñas */
+    text-align: start;
+  }
+
+  .footer p {
+    font-size: 18px;
+  }
+}
