@@ -1,10 +1,12 @@
 import { Title } from "../Title"
 import { Container } from "../Container"
-export const SectionPortfolio = () => {
+export const SectionPortfolio = ({id}) => {
   return (
-    <div>
+    <div id={id}>
         <Container>
-        <Title>PORTFOLIO</Title>
+            <section >
+            <Title>PORTFOLIO</Title>
+            </section>
         </Container>
      
     </div>
