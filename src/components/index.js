@@ -5,5 +5,7 @@ export * from './IconHamburger';
 export * from './Logo';
 export * from './Main';
 export * from './Navbar';
+export * from './Title';
 export * from './foot-parts';
+export * from './index';
 export * from './sections';
