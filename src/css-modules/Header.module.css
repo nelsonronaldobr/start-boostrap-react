@@ -33,7 +33,8 @@
 .header__nav-list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    gap: 10px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
