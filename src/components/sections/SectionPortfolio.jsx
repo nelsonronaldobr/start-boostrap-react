@@ -17,13 +17,13 @@ export const SectionPortfolio = ({ id }) => {
                 <section className={style['section-portfolio']} >
                     <Title className={style['section-contact__title']} >PORTFOLIO</Title>
                     <IconStart color={'black'} className={'start-icon__black'}/>
-                    <div>
-                    <img src={cabin}/>
-                    <img src={cake}/>
-                    <img src={circus}/>
-                    <img src={game}/>
-                    <img src={safe}/>
-                    <img src={submarine}/>
+                    <div className={style['section-portfolio__images']}>
+                        <img src={cabin} />
+                        <img src={cake}/>
+                        <img src={circus}/>
+                        <img src={game}/>
+                        <img src={safe}/>
+                        <img src={submarine}/>
                     </div>
                 </section>
             </Container>

@@ -19,6 +19,18 @@
     line-height: 1;
     text-transform: uppercase;
     padding: 0 0 0;
-   
 
+}
+.section-portfolio__images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* Espacio entre las imágenes */
+    margin: 20px;
+}
+.section-portfolio img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ajusta la imagen dentro del contenedor */
 }
