@@ -27,17 +27,20 @@
     /* Quita el padding alrededor del título */
 }
 .section-about__text {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    justify-content: center;
+    margin: 20px;
 }
 .section-about__text p {
     font-family: var(--font-secondary);
     color: var(--color-background);
     font-weight: 700;
     font-size: 20px;
-    width: 26rem;
+    width: 100%;
     line-height: 1.3;
+    padding: 0;
+    margin: 0;
 }
 .button {
     background-color: transparent;
@@ -54,4 +57,18 @@
 .button .icon {
     color: var(--color-background);
     margin-right: 5px;
+}
+
+@media  (min-width: 576px) { 
+
+    /* Tus estilos para dispositivos Small aquí */
+    .section-about__text {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .section-about__text{
+      margin: 20px 150px;
+    }
 }
