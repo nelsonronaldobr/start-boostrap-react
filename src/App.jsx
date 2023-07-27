@@ -1,5 +1,10 @@
 import { Footer, Header, Main } from './components';
-import { SectionMain } from './components/sections';
+import {
+    SectionMain,
+    SectionAbout,
+    SectionPortfolio,
+    SectionContact
+} from './components/sections';
 
 export const App = () => {
     return (
@@ -7,6 +12,9 @@ export const App = () => {
             <Header />
             <Main>
                 <SectionMain />
+                <SectionPortfolio id={'portafolio'} />
+                <SectionAbout id={'about'} />
+                <SectionContact id={'contact'} />
             </Main>
             <Footer />
         </>
