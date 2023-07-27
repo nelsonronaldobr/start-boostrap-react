@@ -4,9 +4,9 @@ import { IconStart } from '../IconStarts';
 import style from '../../css-modules/SectionContact.module.css'
 export const SectionContact = ({ id }) => {
     return (
-        <div id={id} className={style['section-contact']}>
-            <Container>
-                <section>
+        <div id={id} >
+            <Container className={style['section-contact__background']}>
+                <section className={style['section-contact']}>
                     <Title className={style['section-contact__title']}>CONTACT</Title>
                     <IconStart color={'black'}/>
                 </section> 

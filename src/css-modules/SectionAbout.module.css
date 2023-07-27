@@ -1,7 +1,8 @@
 @import '../css/globals.css';
-
-.section-about {
+.section-about__background{
     background-color: var(--color-secondary);
+}
+.section-about {
     display: flex;
     align-items: center;
     flex-direction: column;

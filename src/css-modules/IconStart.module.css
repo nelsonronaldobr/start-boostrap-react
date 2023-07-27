@@ -1,8 +1,30 @@
-.start-icon {
+.start-icon__black , .start-icon__White{
     position: relative;
 }
 
-.start-icon::before {
+
+.start-icon__black::before {
+    content: '';
+    position: absolute;
+    background-color: #030303;
+    width: 80px;
+    height: 4px;
+    left: 45px;
+    top: 6px;
+    bottom: 0;
+}
+
+.start-icon__black::after {
+    content: '';
+    position: absolute;
+    background-color: #151515;
+    width: 80px;
+    height: 4px;
+    right: 45px;
+    top: 6px;
+    bottom: 0;
+}
+.start-icon__white::before {
     content: '';
     position: absolute;
     background-color: #fff;
@@ -13,7 +35,7 @@
     bottom: 0;
 }
 
-.start-icon::after {
+.start-icon__white::after {
     content: '';
     position: absolute;
     background-color: #fff;
@@ -23,7 +45,6 @@
     top: 6px;
     bottom: 0;
 }
-
 .black{
     color: black;
 }

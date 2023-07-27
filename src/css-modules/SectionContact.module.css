@@ -1,6 +1,8 @@
 @import '../css/globals.css';
-.section-contact {
+.section-contact__background{
     background-color: var(--color-background);
+}
+.section-contact {
     display: flex;
     flex-direction: column;
     color: var(--color-background);
