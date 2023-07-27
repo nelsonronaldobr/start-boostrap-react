@@ -9,6 +9,14 @@ export const SectionPortfolio = ({ id }) => {
                 <section className={style['section-portfolio']} >
                     <Title className={style['section-contact__title']} >PORTFOLIO</Title>
                     <IconStart color={'black'} className={'start-icon__black'}/>
+                    <div>
+                    <img/>
+                    <img/>
+                    <img/>
+                    <img/>
+                    <img/>
+                    <img/>
+                    </div>
                 </section>
             </Container>
         </div>
