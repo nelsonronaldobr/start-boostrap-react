@@ -1,0 +1,53 @@
+.start-icon__black , .start-icon__white{
+    position: relative;
+}
+
+
+.start-icon__black::before {
+    content: '';
+    position: absolute;
+    background-color: #030303;
+    width: 80px;
+    height: 4px;
+    left: 45px;
+    top: 6px;
+    bottom: 0;
+}
+
+.start-icon__black::after {
+    content: '';
+    position: absolute;
+    background-color: #151515;
+    width: 80px;
+    height: 4px;
+    right: 45px;
+    top: 6px;
+    bottom: 0;
+}
+.start-icon__white::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 4px;
+    left: 45px;
+    top: 6px;
+    bottom: 0;
+}
+
+.start-icon__white::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 4px;
+    right: 45px;
+    top: 6px;
+    bottom: 0;
+}
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}

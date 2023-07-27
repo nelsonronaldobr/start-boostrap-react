@@ -1,3 +1,12 @@
+import PropTypes from 'prop-types';
+
 export const Container = ({ children }) => {
-    return <div className='container'>{children}</div>;
+    return <div className='container' >{children}</div>;
+};
+
+Container.propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]).isRequired
 };
