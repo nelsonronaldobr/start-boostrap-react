@@ -34,7 +34,7 @@ html {
 
 
 /* Estilos para dispositivos Small (≥576px) */
-@media (min-width: 576px) {
+@media (min-width: 576px) { 
 
     /* Tus estilos para dispositivos Small aquí */
     .container {
