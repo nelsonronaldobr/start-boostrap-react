@@ -6,7 +6,7 @@ export const SectionPortfolio = ({ id }) => {
         <div id={id} className={style['section-portfolio']}> 
             <Container >
                 <section  >
-                    <Title >PORTFOLIO</Title>
+                    <Title className={style['section-contact__title']} >PORTFOLIO</Title>
                 </section>
             </Container>
         </div>
