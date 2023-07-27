@@ -1,0 +1,10 @@
+@import '../css/globals.css';
+
+.section-about {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+}
