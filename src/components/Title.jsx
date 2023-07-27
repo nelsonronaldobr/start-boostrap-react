@@ -1,6 +1,6 @@
 
-export const Title = ({children,className:{color}}) => {
+export const Title = ({children,className}) => {
   return (
-    <h1 className={color}>{children}</h1>
+    <h1 className={className}>{children}</h1>
   )
 }

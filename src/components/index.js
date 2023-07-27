@@ -2,6 +2,7 @@ export * from './Container';
 export * from './Footer';
 export * from './Header';
 export * from './IconHamburger';
+export * from './IconStarts';
 export * from './Logo';
 export * from './Main';
 export * from './Navbar';
