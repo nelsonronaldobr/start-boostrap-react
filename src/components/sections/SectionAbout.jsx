@@ -8,7 +8,7 @@ export const SectionAbout = ({ id }) => {
             <Container>
                 <section  className={style['section-about']}>
                     <Title className={style['section-about__title'] }>ABOUT</Title>
-                    <IconStart color={'white'}/>
+                    <IconStart color={'white'} className={'start-icon__white'}/>
                 </section>
             </Container>
         </div>

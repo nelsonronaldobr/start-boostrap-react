@@ -7,8 +7,8 @@ export const SectionContact = ({ id }) => {
         <div id={id} >
             <Container className={style['section-contact__background']}>
                 <section className={style['section-contact']}>
-                    <Title className={style['section-contact__title']}>CONTACT</Title>
-                    <IconStart color={'black'}/>
+                    <Title className={style['section-contact__title']}>CONTACT ME</Title>
+                    <IconStart className={'start-icon__black'} color={'black'}/>
                 </section> 
             </Container>
         </div>
