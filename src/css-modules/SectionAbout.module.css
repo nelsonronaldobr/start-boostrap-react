@@ -69,16 +69,17 @@
 }
 
 @media (min-width: 576px) {
-  
+
 
     /* Tus estilos para dispositivos Small aquí */
     .section-about__text {
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
-    .section-about__text p{
-        text-align: start; 
-     }
+
+    .section-about__text p {
+        text-align: start;
+    }
 
 }
 
@@ -86,7 +87,8 @@
     .section-about__text {
         margin: 20px 150px;
     }
-    .section-about__text p{
-       text-align: start; 
+
+    .section-about__text p {
+        text-align: start;
     }
 }
