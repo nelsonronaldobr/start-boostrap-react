@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     margin: 0 auto;
 }
@@ -30,7 +34,7 @@
 
 
 /* Estilos para dispositivos Small (≥576px) */
-@media (min-width: 576px) {
+@media (min-width: 576px) { 
 
     /* Tus estilos para dispositivos Small aquí */
     .container {
