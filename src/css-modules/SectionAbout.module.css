@@ -1,7 +1,9 @@
 @import '../css/globals.css';
-.section-about__background{
+
+.section-about__background {
     background-color: var(--color-secondary);
 }
+
 .section-about {
     display: flex;
     align-items: center;
@@ -9,6 +11,7 @@
     justify-content: center;
     padding: 80px 0;
 }
+
 .section-about__title {
     margin-bottom: 15px;
     color: var(--color-background);
@@ -26,12 +29,14 @@
     padding: 0 0 0;
     /* Quita el padding alrededor del título */
 }
+
 .section-about__text {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin: 20px;
 }
+
 .section-about__text p {
     font-family: var(--font-secondary);
     color: var(--color-background);
@@ -43,6 +48,7 @@
     margin: 0;
     text-align: justify;
 }
+
 .button {
     background-color: transparent;
     border: 2px solid white;
@@ -54,7 +60,7 @@
     font-weight: 700;
     font-family: var(--font-secondary);
     margin: 20px 0 0 0;
-    
+    cursor: pointer;
 }
 
 .button .icon {
@@ -62,7 +68,10 @@
     margin-right: 5px;
 }
 
-@media  (min-width: 576px) { 
+@media (min-width: 576px) {
+    .section-about__text p {
+        text-align: unset;
+    }
 
     /* Tus estilos para dispositivos Small aquí */
     .section-about__text {
@@ -74,9 +83,10 @@
      }
 
 }
+
 @media screen and (min-width: 992px) {
-    .section-about__text{
-      margin: 20px 150px;
+    .section-about__text {
+        margin: 20px 150px;
     }
     .section-about__text p{
        text-align: start; 
