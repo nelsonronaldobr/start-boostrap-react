@@ -41,6 +41,7 @@
     line-height: 1.3;
     padding: 0;
     margin: 0;
+    text-align: justify;
 }
 .button {
     background-color: transparent;
@@ -52,6 +53,8 @@
     text-align: center;
     font-weight: 700;
     font-family: var(--font-secondary);
+    margin: 20px 0 0 0;
+    
 }
 
 .button .icon {
@@ -64,11 +67,18 @@
     /* Tus estilos para dispositivos Small aquí */
     .section-about__text {
         grid-template-columns: repeat(2, 1fr);
+        
     }
+    .section-about__text p{
+        text-align: start; 
+     }
 
 }
 @media screen and (min-width: 992px) {
     .section-about__text{
       margin: 20px 150px;
+    }
+    .section-about__text p{
+       text-align: start; 
     }
 }
