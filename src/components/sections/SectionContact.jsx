@@ -14,6 +14,7 @@ export const SectionContact = ({ id }) => {
                         className={'start-icon__black'}
                         color={'black'}
                     />
+
                     <div className={style.container}>
                         <form className={style['section-contact__form']}>
                             <input
